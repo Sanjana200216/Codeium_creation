@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .book {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button>New Arrivals</button>
+        <button>Categories</button>
+        <button>Contact</button>
+    </header>
+
+    <div class="book-container">
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Title</h3>
+            <p>Author</p>
+            <p>Genre</p>
+            <p>Summary</p>
+        </div>
+        <!-- More book divs here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bookstore</p>
+    </footer>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="category">Category:</label><br>
+        <select id="category" name="category">
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+        </select><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
